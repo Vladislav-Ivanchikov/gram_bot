@@ -60,8 +60,6 @@ const start = async () => {
         const data = msg.data
         const botNumber = chats[chatId]
 
-        console.log(botNumber)
-
         if (data === "/again") {
             return startGame(chatId)
         }
