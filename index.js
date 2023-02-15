@@ -21,6 +21,7 @@ const startGame = async (chatId) => {
     await bot.sendMessage(chatId, "Тебе нужно выбрать загаданный вид НаРкОтэКа, за совпадение, ты получаешь баллы, которые можно обменять в крипто обменнике @spectrabtc")
     random = Math.floor(Math.random() * 10)
     chats[chatId] = drugSelector(random)
+    await bot.sendMessage(chatId, "Выбери наркотик:", gameOptions)
 }
 
 const gameInfo = async (chatId, botNumber, data) => {
